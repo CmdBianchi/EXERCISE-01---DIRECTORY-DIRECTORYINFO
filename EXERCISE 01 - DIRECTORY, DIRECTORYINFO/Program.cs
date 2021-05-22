@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
+
 namespace EXERCISE_01___DIRECTORY__DIRECTORYINFO {
     //-----> START
     ///////////////////////////////////////////////////////////////////////////////////////////
@@ -9,7 +9,7 @@ namespace EXERCISE_01___DIRECTORY__DIRECTORYINFO {
             string path = @"c:\temp\myfolder";
 
             try {
-                IEnumerable<string> folders = Directory.EnumerateDirectories(path, ".", SearchOption.AllDirectories);
+                var folders = Directory.EnumerateDirectories(path, ".", SearchOption.AllDirectories);
                 Console.WriteLine("FOLDERS: ");
                 foreach(string s in folders) {
                     Console.WriteLine(s);
