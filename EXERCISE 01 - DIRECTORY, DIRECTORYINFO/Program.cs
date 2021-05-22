@@ -18,6 +18,7 @@ namespace EXERCISE_01___DIRECTORY__DIRECTORYINFO {
                 foreach (string s in files) {
                     Console.WriteLine(s);
                 }
+                Directory.CreateDirectory(@"c:\temp\myfolder\newfolder");
             }
             catch (IOException e) {
                 Console.WriteLine("An error occurred");
