@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-
 namespace EXERCISE_01___DIRECTORY__DIRECTORYINFO {
     //-----> START
     ///////////////////////////////////////////////////////////////////////////////////////////
@@ -12,6 +11,11 @@ namespace EXERCISE_01___DIRECTORY__DIRECTORYINFO {
                 var folders = Directory.EnumerateDirectories(path, ".", SearchOption.AllDirectories);
                 Console.WriteLine("FOLDERS: ");
                 foreach(string s in folders) {
+                    Console.WriteLine(s);
+                }
+                var files = Directory.EnumerateFiles(path, ".", SearchOption.AllDirectories);
+                Console.WriteLine("FILES: ");
+                foreach (string s in files) {
                     Console.WriteLine(s);
                 }
             }
